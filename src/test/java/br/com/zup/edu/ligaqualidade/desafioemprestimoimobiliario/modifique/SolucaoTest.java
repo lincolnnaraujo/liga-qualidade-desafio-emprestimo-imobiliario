@@ -38,7 +38,9 @@ public class SolucaoTest {
       List<String> outputLines = Files.readAllLines(outputPath);
       
       String idsValidados = Solucao.processMessages(inputLines);
-      
+
       Assertions.assertEquals(outputLines.get(0),idsValidados);
+
+      System.out.println(idsValidados);
   }
 }
